@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ТЕСТОВАЯ СТРАНИЦА 2</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <label for="shape-select">Выберите фигуру и цвет:</label>
+  <select id="shape-select">
+    <option value="circle1">Круг, красный</option>
+    <option value="circle2">Круг, зелёный</option>
+    <option value="circle3">Круг, синий</option>
+    <option value="square1">Квадрат, красный</option>
+    <option value="square2">Квадрат, зелёный</option>
+    <option value="square3">Квадрат, синий</option>
+    <option value="triangle1">Треугольник, красный</option>
+    <option value="triangle2">Треугольник, зелёный</option>
+    <option value="triangle3">Треугольник, синий</option>
+  </select>
+
+  <label for="quantity">Количество:</label>
+  <input type="number" id="quantity" value="1" min="1" max="10">
+
+  <button onclick="generateShapes()">Создать фигуры</button>
+  <button onclick="deleteall()">Удалить всё</button>
+
+  <div id="output">
+  </div>
+
+  <script>
+    function generateShapes() {
+      var shapeSelect = document.getElementById("shape-select");
+      var quantityInput = document.getElementById("quantity");
+      var output = document.getElementById("output");
+      var selectedShape = shapeSelect.value;
+      var quantity = parseInt(quantityInput.value, 10);
+
+      for (var i = 0; i < quantity; i++) {
+        var shape = document.createElement("div");
+        shape.classList.add(selectedShape);
+        output.appendChild(shape);
+      }
+    }
+    function deleteall(){
+        output.innerHTML = "";
+    }
+  </script>
+</body>
+</html>

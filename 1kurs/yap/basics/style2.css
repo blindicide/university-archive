@@ -1,0 +1,81 @@
+﻿
+.circle1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .circle2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .circle3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .square1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .square2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .square3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .triangle1 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .triangle3 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    display: inline-block;
+    margin: 10px;
+  }
